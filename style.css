@@ -1,0 +1,220 @@
+/* General Styles */
+body {
+    background-image: url(img/wow.avif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111010;
+    overflow-x: hidden; /* To prevent horizontal scrolling */
+  }
+
+  /*
+  .logo{
+    background: none;
+    display: inline-block;
+    width: 100px;
+    height: auto;
+  }
+  */
+  header {
+    
+    padding: 10px 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+  }
+  
+  header .logo img {
+    height: 50px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 30px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  
+  nav ul li a:hover {
+    color: #ffcc00;
+  }
+  
+  .hero {
+    background-image: url('camera-bg.jpg'); /* Replace with your camera background image */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+    height: 100vh; /* Full screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 3em;
+    margin: 0;
+  }
+  
+  .hero-content p {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+  
+  .products {
+    padding: 30px 20px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .products h2 {
+    margin-bottom: 20px;
+  }
+  
+  .product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .product {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 280px;
+    margin: 15px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .product:hover {
+    transform: scale(1.05);
+  }
+  
+  .product img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+  }
+  
+  .product button {
+    background-color: #0066cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .product button:hover {
+    background-color: #004d99;
+  }
+  
+  .reviews {
+    padding: 30px 20px;
+    background-color: #eeeeee;
+    text-align: center;
+  }
+  
+  .reviews .review {
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+  
+  .contact {
+    background-color: #333;
+    color: white;
+    padding: 30px 20px;
+  }
+  
+  .contact form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact form label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  .contact form input,
+  .contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .contact form button {
+    background-color: #0066cc;
+    color: white;
+    padding: 15px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact form button:hover {
+    background-color: #004d99;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      margin-top: 20px;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  
+    .product-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .hero-content h1 {
+      font-size: 2.5em;
+    }
+  
+    .hero-content p {
+      font-size: 1em;
+    }
+  }
+  
+  
